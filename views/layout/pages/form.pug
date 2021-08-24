@@ -1,0 +1,22 @@
+section.make-order
+    .make-order__top
+        .order-text
+        .order-timer
+    .make-order__photo
+        .make-order-img.photo-products
+        button(type="submit").button.button--decor.make-order__btn  
+    .make-order__form
+        .price__old.price__old--decor
+        .price.price--animation
+        form(action="", method="post").order-form.form
+            ul.form__items
+                li.from__item Как к вам обращатся?
+                    label(for="name").form__label.label-name 
+                        input(type="text" id="name" placeholder="Ваша Фамилия и Имя").form__input.input-name
+                li.from__item
+                    label(for="phone-number").form__label.label-phone 
+                        input(type="tel" name="phone-number" id="phone-number" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста").form__input.input-tel
+            
+        
+
+    //- img(src="img/promo-photo", alt="Фотография продукта")
