@@ -6,82 +6,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>furniture collection</title>
+    <title>TeamLead_test-task</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <div class="header-logo"> <img class="header-logo__img" src="img/logo.png" alt="Логотип"></div>
+          <div class="header__video-wrapp"> 
+            <div class="header__video-box">
+              <video class="header__video" src="img/1ololo.mp4" autoplay loop muted> </video>
+            </div>
+          </div>
           <nav class="header-nav">
+            <div class="header-logo"> <img class="header-logo__img" src="img/icon/logo.png" alt="Логотип"></div>
             <ul class="header-nav__items">    
-              <li class="header-nav_item">Состав</li>
-              <li class="header-nav_item">Отзывы</li>
-              <li class="header-nav_item">Промо</li>
-              <li class="header-nav_item">Заказать</li>
+              <li class="header-nav_item"><a class="link__item" href="#">Cостав</a></li>
+              <li class="header-nav_item"><a class="link__item" href="#">Отзывы</a></li>
+              <li class="header-nav_item"><a class="link__item" href="#">Промо</a></li>
+              <li class="header-nav_item"><a class="link__item" href="#">Заказать</a></li>
             </ul>
           </nav>
-          <div class="header-list">
-            <h1 class="header-list__title">quas quod</h1>
-            <ul class="header-list__items">
-              <li class="list__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
-              <li class="list__item">Assumenda sint, ullam quasi officia adipisci eaque nostrum quidem officiis fugit facilis. </li>
-              <li class="list__item">Deleniti ab dolor eveniet in temporibus quibusdam id?</li>
-            </ul>
+          <div class="header-content">
+            <div class="header-list">
+              <h1 class="header-list__title">quas quod</h1>
+              <ul class="header-list__items">
+                <li class="list__item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </li>
+                <li class="list__item">Assumenda sint, ullam quasi officia adipisci eaque nostrum quidem officiis fugit facilis. </li>
+                <li class="list__item">Deleniti ab dolor eveniet in temporibus quibusdam id?</li>
+              </ul>
+            </div>
+            <div class="header-photo"><img class="header-photo__img photo-products" src="img/prod.png" alt="Фотография продукта"></div>
           </div>
-          <div class="header-photo"><img class="header-photo__img" src="img/promo-top.jpg" alt="promo" srcset="promo-360.jpg 360w, promo-720.jpg 720w, promo-1080.jpg 1080w, promo-1920.jpg 1920w" sizes="360px"></div>
+          <button class="button button--decor header-photo__btn" type="submit">Заказать</button>
         </div>
-        <button class="button button--decor header-photo__btn" type="submit">    </button>
       </div>
     </header>
     <div class="content-wrapper">
       <div class="page-home">
-        <section class="product-structure">
-          <div class="ingredients">
-            <div class="ingredient__block"><img class="ingredient__photo" src="" alt="">
-              <p class="ingredient__text">text</p>
+        <div class="container">
+          <section class="composition-structure">
+            <div class="ingredients">
+              <div class="ingredient__block"><img class="ingredient__photo" src="" alt="">
+                <p class="ingredient__text">text</p>
+              </div>
+              <div class="ingredient__block"><img class="ingredient__photo" src="" alt="">
+                <p class="ingredient__text">text</p>
+              </div>
+              <div class="ingredient__block"><img class="ingredient__photo" src="" alt="">
+                <p class="ingredient__text">text</p>
+              </div>
             </div>
-            <div class="ingredient__block"><img class="ingredient__photo" src="" alt="">
-              <p class="ingredient__text">text</p>
+            <div class="composition__photo"><img class="photo-products product__photo" src="img/prod.png" alt="Фотография продукта">
+              <button class="button button--decor product__btn" type="submit">  </button>
             </div>
-            <div class="ingredient__block"><img class="ingredient__photo" src="" alt="">
-              <p class="ingredient__text">text</p>
+            <div class="ingredients">
+              <div class="ingredient__block"><img class="ingredient__photo" src="" alt="">
+                <p class="ingredient__text">text</p>
+              </div>
+              <div class="ingredient__block"><img class="ingredient__photo" src="" alt="">
+                <p class="ingredient__text">text</p>
+              </div>
+              <div class="ingredient__block"><img class="ingredient__photo" src="" alt="">
+                <p class="ingredient__text">text</p>
+              </div>
             </div>
-          </div>
-          <div class="product__photo">
-            <button class="button button--decor product__btn" type="submit">  </button>
-          </div>
-          <div class="ingredients">
-            <div class="ingredient__block"><img class="ingredient__photo" src="" alt="">
-              <p class="ingredient__text">text</p>
+          </section>
+          <section class="reviews"></section>
+          <section class="promo">
+            <div class="promo__proto"><img class="promo__photo-img" src="img/promo-photo" alt="Фотография продукта">
+              <button class="button button--decor promo__btn" type="submit">   </button>
             </div>
-            <div class="ingredient__block"><img class="ingredient__photo" src="" alt="">
-              <p class="ingredient__text">text</p>
+            <div class="promo__content">
+              <h2 class="promo__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+              <p class="promo__text">Maiores harum autem mollitia facere quo quam pariatur cumque, sint vitae at sapiente eveniet dignissimos culpa non fuga a! Quo, fugit dolores.</p>
             </div>
-            <div class="ingredient__block"><img class="ingredient__photo" src="" alt="">
-              <p class="ingredient__text">text</p>
+            <div class="promo__list">
+              <ul class="promo__items">
+                <li class="promo__item"> </li>
+                <li class="promo__item"> </li>
+                <li class="promo__item"> </li>
+              </ul>
             </div>
-          </div>
-        </section>
-        <section class="reviews"></section>
-        <section class="promo">
-          <div class="promo__proto"><img class="promo__photo-img" src="img/promo-photo" alt="Фотография продукта">
-            <button class="button button--decor promo__btn" type="submit">   </button>
-          </div>
-          <div class="promo__content">
-            <h2 class="promo__title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-            <p class="promo__text">Maiores harum autem mollitia facere quo quam pariatur cumque, sint vitae at sapiente eveniet dignissimos culpa non fuga a! Quo, fugit dolores.</p>
-          </div>
-          <div class="promo__list">
-            <ul class="promo__items">
-              <li class="promo__item"> </li>
-              <li class="promo__item"> </li>
-              <li class="promo__item"> </li>
-            </ul>
-          </div>
-        </section>
+          </section>
+          <section class="make-order">
+            <div class="make-order__top">
+              <div class="order-text"></div>
+              <div class="order-timer"></div>
+            </div>
+            <div class="make-order__photo">
+              <div class="make-order-img photo-products"></div>
+              <button class="button button--decor make-order__btn" type="submit"> </button>
+            </div>
+            <div class="make-order__form">
+              <div class="price__old price__old--decor"></div>
+              <div class="price price--animation"></div>
+              <form class="order-form form" action="" method="post">
+                <ul class="form__items">
+                  <li class="from__item">Как к вам обращатся?
+                    <label class="form__label label-name" for="name"> 
+                      <input class="form__input input-name" type="text" id="name" placeholder="Ваша Фамилия и Имя">
+                    </label>
+                  </li>
+                  <li class="from__item">
+                    <label class="form__label label-phone" for="phone-number"> 
+                      <input class="form__input input-tel" type="tel" name="phone-number" id="phone-number" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста">
+                    </label>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </section>
+        </div>
       </div>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-copyright"><span class="copyright-text">Lorem ipsum dolor</span></div>
+          <div class="footer-report"><a class="report" href="#">cообщить об ошибке</a></div>
+          <div class="footer__links"><a class="footer__link" href=""><img src="img/icon/pinterest.svg" alt="media"></a><a class="footer__link" href=""><img src="img/icon/instagram.svg" alt="media"></a><a class="footer__link" href=""><img src="img/icon/telegram.svg" alt="media"></a><a class="footer__link" href=""><img src="img/icon/whatsapp.svg" alt="media"></a></div>
+        </div>
+      </footer>
     </div>
   </body>
   <script src="js/script.min.js"></script>

@@ -1,21 +1,29 @@
 header.header
     .container
         .header__inner
-            .header-logo 
-                img(src="img/logo.png", alt="Логотип").header-logo__img
+            .header__video-wrapp 
+                .header__video-box
+                    video(src="img/1ololo.mp4" autoplay loop muted).header__video 
             nav.header-nav
+                .header-logo 
+                    img(src="img/icon/logo.png", alt="Логотип").header-logo__img
                 ul.header-nav__items     
-                    li.header-nav_item Состав
-                    li.header-nav_item Отзывы
-                    li.header-nav_item Промо
-                    li.header-nav_item Заказать
-            .header-list
-                h1.header-list__title quas quod
-                ul.header-list__items
-                    li.list__item Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    li.list__item Assumenda sint, ullam quasi officia adipisci eaque nostrum quidem officiis fugit facilis. 
-                    li.list__item Deleniti ab dolor eveniet in temporibus quibusdam id?
-            .header-photo
-                .header-photo__img.photo-products
-        button(type="submit").button.button--decor.header-photo__btn     
+                    li.header-nav_item
+                        a(href="#").link__item Cостав
+                    li.header-nav_item
+                        a(href="#").link__item Отзывы
+                    li.header-nav_item
+                        a(href="#").link__item Промо
+                    li.header-nav_item
+                        a(href="#").link__item Заказать
+            .header-content
+                .header-list
+                    h1.header-list__title quas quod
+                    ul.header-list__items
+                        li.list__item Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        li.list__item Assumenda sint, ullam quasi officia adipisci eaque nostrum quidem officiis fugit facilis. 
+                        li.list__item Deleniti ab dolor eveniet in temporibus quibusdam id?
+                .header-photo
+                    img(src="img/prod.png", alt="Фотография продукта").header-photo__img.photo-products
+            button(type="submit").button.button--decor.header-photo__btn Заказать
         

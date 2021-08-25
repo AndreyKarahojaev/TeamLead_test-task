@@ -6,7 +6,6 @@ html,
 body {
 	height: 100%;
 }
-
 .content-wrapper {
 	display: flex;
 	flex-direction: column;
@@ -46,7 +45,7 @@ body {
 
 
     //часто используемые цвета
-    $basic-background:#EEEEEE;
+    $basic-background:#5B5B5B;
     $basic-specialBlack :#2C2B2B;
     //центрирование контента
     
@@ -56,8 +55,8 @@ body {
     // $basic-inputBefore:#F2F2F2;
     // $basic-inputDown:#D5D5D5;
  
-    // $basic-mobileBtn:#5A0D67;
-    // $basic-mobileBtnHover:#333333;
+    // $basic-mobile:#5A0D67;
+    $basic-hover:#D69F67;
 
     // специальные цвета
     $basic-accent:#5A0D67;
@@ -84,7 +83,7 @@ body {
 
     margin: 0 auto;
     // overflow-x: hidden;
-    // background-color: $basic-background;
+    background-color: #3D3D3D;
 }
 
 
@@ -97,7 +96,7 @@ body {
     margin: -1px;
 }
 
-.text-btn {
+.button--decor{
     text-transform: uppercase;
     font-weight: 300;
     font-size: $font-sizeSmall;
@@ -125,9 +124,10 @@ body {
     background-color: $basic-white;
 }
 
-.button:hover p {
+.button:hover {
     color: $basic-accent;
 }
+
 
 
 

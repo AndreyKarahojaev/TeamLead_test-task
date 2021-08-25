@@ -1,41 +1,42 @@
 extends ../extends/basis
 block unique-content 
     .page-home
-        section.composition-structure
-            .ingredients
-                .ingredient__block
-                    img.ingredient__photo(src="", alt="")
-                    p.ingredient__text text
-                .ingredient__block
-                    img.ingredient__photo(src="", alt="")
-                    p.ingredient__text text
-                .ingredient__block
-                    img.ingredient__photo(src="", alt="")
-                    p.ingredient__text text
-            .composition__photo
-                .photo-products.product__photo
-                button(type="submit").button.button--decor.product__btn   
-            .ingredients
-                .ingredient__block
-                    img.ingredient__photo(src="", alt="")
-                    p.ingredient__text text
-                .ingredient__block
-                    img.ingredient__photo(src="", alt="")
-                    p.ingredient__text text
-                .ingredient__block
-                    img.ingredient__photo(src="", alt="")
-                    p.ingredient__text text
-        include layout\pages\reviews.pug
-        section.promo
-            .promo__proto
-                img(src="img/promo-photo", alt="Фотография продукта").promo__photo-img
-                button(type="submit").button.button--decor.promo__btn    
-            .promo__content
-                h2.promo__title Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                p.promo__text Maiores harum autem mollitia facere quo quam pariatur cumque, sint vitae at sapiente eveniet dignissimos culpa non fuga a! Quo, fugit dolores.
-            .promo__list
-                ul.promo__items
-                    li.promo__item 
-                    li.promo__item 
-                    li.promo__item 
-        include layout\pages\form.pug
+        .container
+            section.composition-structure
+                .ingredients
+                    .ingredient__block
+                        img.ingredient__photo(src="", alt="")
+                        p.ingredient__text text
+                    .ingredient__block
+                        img.ingredient__photo(src="", alt="")
+                        p.ingredient__text text
+                    .ingredient__block
+                        img.ingredient__photo(src="", alt="")
+                        p.ingredient__text text
+                .composition__photo
+                    img(src="img/prod.png", alt="Фотография продукта").photo-products.product__photo
+                    button(type="submit").button.button--decor.product__btn   
+                .ingredients
+                    .ingredient__block
+                        img.ingredient__photo(src="", alt="")
+                        p.ingredient__text text
+                    .ingredient__block
+                        img.ingredient__photo(src="", alt="")
+                        p.ingredient__text text
+                    .ingredient__block
+                        img.ingredient__photo(src="", alt="")
+                        p.ingredient__text text
+            include reviews.pug
+            section.promo
+                .promo__proto
+                    img(src="img/promo-photo", alt="Фотография продукта").promo__photo-img
+                    button(type="submit").button.button--decor.promo__btn    
+                .promo__content
+                    h2.promo__title Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    p.promo__text Maiores harum autem mollitia facere quo quam pariatur cumque, sint vitae at sapiente eveniet dignissimos culpa non fuga a! Quo, fugit dolores.
+                .promo__list
+                    ul.promo__items
+                        li.promo__item 
+                        li.promo__item 
+                        li.promo__item 
+            include form.pug
